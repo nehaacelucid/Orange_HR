@@ -19,6 +19,8 @@ public class LoginPage {
 	 private By usernameField = By.cssSelector("input[name='username']");
 	    private By passwordField = By.name("password");
 	    private By loginButton = By.cssSelector("button[type='submit']");
+	    private By errorMessage = By.xpath("//p[contains(@class,'oxd-alert-content-text')]");
+	    private By requiredMessage = By.xpath("//span[contains(@class,'oxd-input-field-error-message')]");
 
 	
 
@@ -36,5 +38,27 @@ public class LoginPage {
 
 	        WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(loginButton));
 	        loginBtn.click();
+	        try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	    }
+	       
+	        public boolean isErrorMessageDisplayed() {
+	            try {
+	                return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).isDisplayed();
+	            } catch (Exception e) {
+	                return false;
+	            }
+	        }
+
+	        public boolean isRequiredMessageDisplayed() {
+	            try {
+	                return wait.until(ExpectedConditions.visibilityOfElementLocated(requiredMessage)).isDisplayed();
+	            } catch (Exception e) {
+	                return false;
+	            }
+	        }
 	}
