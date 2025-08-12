@@ -16,6 +16,8 @@ public class DashboardPage {
     private By dashboardHeader = By.xpath("//h6[normalize-space(.)='Dashboard']");
     private By userDropdown = By.xpath("//span[@class='oxd-userdropdown-tab']");
     private By logoutLink = By.xpath("//a[normalize-space()='Logout']");
+    private By quickAccessWidgets = By.cssSelector(".oxd-grid-item");
+    private By usernameText = By.cssSelector(".oxd-userdropdown-name");
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
@@ -35,4 +37,27 @@ public class DashboardPage {
                  .visibilityOfElementLocated(logoutLink));
          logout.click();
      }
+    
+    public String getDashboardHeaderText() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader)).getText();
+    }
+
+    public boolean areQuickAccessWidgetsVisible() {
+        return !driver.findElements(quickAccessWidgets).isEmpty();
+    }
+
+    public String getLoggedInUsername() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(usernameText)).getText();
+    }
+
+    public boolean waitForDashboardLoad() {
+        long startTime = System.currentTimeMillis();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader));
+        long loadTime = System.currentTimeMillis() - startTime;
+        return loadTime <= 5000; // within 5 seconds
+    }
+
+    public boolean isLoginPageVisible() {
+        return driver.getCurrentUrl().contains("/auth/login");
+    }
 }
