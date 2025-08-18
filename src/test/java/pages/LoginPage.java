@@ -21,6 +21,8 @@ public class LoginPage {
 	    private By loginButton = By.cssSelector("button[type='submit']");
 	    private By errorMessage = By.xpath("//p[contains(@class,'oxd-alert-content-text')]");
 	    private By requiredMessage = By.xpath("//span[contains(@class,'oxd-input-field-error-message')]");
+	    private By forgotPasswordLink = By.xpath("//p[contains(@class,'orangehrm-login-forgot')]");
+	    private By resetPasswordHeader = By.xpath("//h6[normalize-space()='Reset Password']");
 
 	
 
@@ -61,4 +63,16 @@ public class LoginPage {
 	                return false;
 	            }
 	        }
+	        
+	        public boolean isForgotPasswordLinkVisible() {
+	            return wait.until(ExpectedConditions.visibilityOfElementLocated(forgotPasswordLink)).isDisplayed();
+	        }
+
+	        public void clickForgotPasswordLink() {
+	            wait.until(ExpectedConditions.elementToBeClickable(forgotPasswordLink)).click();
+	        }
+	        public boolean isResetPasswordPageVisible() {
+	            return wait.until(ExpectedConditions.visibilityOfElementLocated(resetPasswordHeader)).isDisplayed();
+	        }
 	}
+
