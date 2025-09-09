@@ -10,7 +10,7 @@ import pages.LoginPage;
 public class LoginTest extends TestBase {
 
 	  @Test(priority = 1)
-    public void verifyLoginAndLogout()  {
+	  public void verifyLoginAndLogout()  {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("Admin", "admin123");
 

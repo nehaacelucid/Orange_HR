@@ -33,7 +33,7 @@ public class DashboardTest extends TestBase {
 
         // Step 5: Verify logged-in username
         String username = dashboardPage.getLoggedInUsername();
-        Assert.assertEquals(username, "TestUser_450 Patil", // change as per your app
+        Assert.assertEquals(username, "RockeyTest userUser", // change as per your app
                 "Logged in username is incorrect.");
 
         // Step 6: Verify dashboard loads within acceptable time

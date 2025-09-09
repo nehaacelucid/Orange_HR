@@ -3,9 +3,7 @@
 <suite name="HRPortalSuite">
     <test name="Tests">
         <classes>
-            <class name="tests.LoginTest"/>
-            <class name="tests.DashboardTest"/>
-            <class name="tests.ForgotPasswordTest"/> 
+            <class name="tests.LoginTestExcel"/> 
         </classes>
     </test>
 </suite>
