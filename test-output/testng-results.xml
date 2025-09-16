@@ -1,17 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T10:28:38 IST" name="HRPortalSuite" finished-at="2025-09-09T10:29:31 IST" duration-ms="53441">
+  <suite started-at="2025-09-16T13:25:06 IST" name="HRPortalSuite" finished-at="2025-09-16T13:27:30 IST" duration-ms="143508">
     <groups>
     </groups>
-    <test started-at="2025-09-09T10:28:38 IST" name="Tests" finished-at="2025-09-09T10:29:31 IST" duration-ms="53441">
-      <class name="tests.LoginTestExcel">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:28:39 IST" name="setup" finished-at="2025-09-09T10:28:49 IST" duration-ms="9704" status="PASS">
+    <test started-at="2025-09-16T13:25:06 IST" name="Tests" finished-at="2025-09-16T13:27:30 IST" duration-ms="143508">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:31 IST" name="setup" finished-at="2025-09-16T13:25:36 IST" duration-ms="5126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:28:49 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-09T10:28:57 IST" duration-ms="8161" status="PASS">
+        <test-method signature="verifyLoginAndLogout()[pri:1, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:36 IST" name="verifyLoginAndLogout" finished-at="2025-09-16T13:25:44 IST" duration-ms="7738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAndLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:44 IST" name="tearDown" finished-at="2025-09-16T13:25:45 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:45 IST" name="setup" finished-at="2025-09-16T13:25:50 IST" duration-ms="5098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidPasswordLogin()[pri:2, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:50 IST" name="invalidPasswordLogin" finished-at="2025-09-16T13:25:56 IST" duration-ms="6590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:56 IST" name="tearDown" finished-at="2025-09-16T13:25:56 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:25:56 IST" name="setup" finished-at="2025-09-16T13:26:03 IST" duration-ms="6070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidUsernameLogin()[pri:3, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:03 IST" name="invalidUsernameLogin" finished-at="2025-09-16T13:26:11 IST" duration-ms="8185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:11 IST" name="tearDown" finished-at="2025-09-16T13:26:11 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:11 IST" name="setup" finished-at="2025-09-16T13:26:16 IST" duration-ms="5449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyUsernameAndPassword()[pri:4, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:16 IST" name="emptyUsernameAndPassword" finished-at="2025-09-16T13:26:23 IST" duration-ms="7059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUsernameAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:23 IST" name="tearDown" finished-at="2025-09-16T13:26:24 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:24 IST" name="setup" finished-at="2025-09-16T13:26:30 IST" duration-ms="5908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyUsernameOnly()[pri:5, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:30 IST" name="emptyUsernameOnly" finished-at="2025-09-16T13:26:37 IST" duration-ms="7148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUsernameOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:37 IST" name="tearDown" finished-at="2025-09-16T13:26:37 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:37 IST" name="setup" finished-at="2025-09-16T13:26:42 IST" duration-ms="5137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyPasswordOnly()[pri:6, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:42 IST" name="emptyPasswordOnly" finished-at="2025-09-16T13:26:49 IST" duration-ms="6573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@274872f8]" started-at="2025-09-16T13:26:49 IST" name="tearDown" finished-at="2025-09-16T13:26:49 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LoginTestExcel">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:26:50 IST" name="setup" finished-at="2025-09-16T13:26:55 IST" duration-ms="4737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:26:55 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-16T13:27:03 IST" duration-ms="7745" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +106,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:28:57 IST" name="tearDown" finished-at="2025-09-09T10:28:57 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:03 IST" name="tearDown" finished-at="2025-09-16T13:27:03 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:28:57 IST" name="setup" finished-at="2025-09-09T10:29:06 IST" duration-ms="8696" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:03 IST" name="setup" finished-at="2025-09-16T13:27:09 IST" duration-ms="6205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:29:06 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-09T10:29:14 IST" duration-ms="8286" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:09 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-16T13:27:16 IST" duration-ms="6683" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,15 +135,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:29:14 IST" name="tearDown" finished-at="2025-09-09T10:29:15 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:16 IST" name="tearDown" finished-at="2025-09-16T13:27:16 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:29:15 IST" name="setup" finished-at="2025-09-09T10:29:23 IST" duration-ms="7952" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:16 IST" name="setup" finished-at="2025-09-16T13:27:23 IST" duration-ms="6980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:29:23 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-09T10:29:31 IST" duration-ms="8387" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:23 IST" name="verifyLogin" data-provider="loginDataFromExcel" finished-at="2025-09-16T13:27:30 IST" duration-ms="6625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,11 +164,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@7241a47d]" started-at="2025-09-09T10:29:31 IST" name="tearDown" finished-at="2025-09-09T10:29:31 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestExcel@76ba13c]" started-at="2025-09-16T13:27:30 IST" name="tearDown" finished-at="2025-09-16T13:27:30 IST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTestExcel -->
+      <class name="tests.DashboardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DashboardTest@55787112]" started-at="2025-09-16T13:25:07 IST" name="setup" finished-at="2025-09-16T13:25:14 IST" duration-ms="7012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDashboardScenarios()[pri:0, instance:tests.DashboardTest@55787112]" started-at="2025-09-16T13:25:14 IST" name="verifyDashboardScenarios" finished-at="2025-09-16T13:25:22 IST" duration-ms="8390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DashboardTest@55787112]" started-at="2025-09-16T13:25:22 IST" name="tearDown" finished-at="2025-09-16T13:25:22 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DashboardTest -->
+      <class name="tests.ForgotPasswordTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ForgotPasswordTest@61526469]" started-at="2025-09-16T13:25:22 IST" name="setup" finished-at="2025-09-16T13:25:27 IST" duration-ms="4790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyForgotPasswordLink()[pri:0, instance:tests.ForgotPasswordTest@61526469]" started-at="2025-09-16T13:25:27 IST" name="verifyForgotPasswordLink" finished-at="2025-09-16T13:25:31 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ForgotPasswordTest@61526469]" started-at="2025-09-16T13:25:31 IST" name="tearDown" finished-at="2025-09-16T13:25:31 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ForgotPasswordTest -->
     </test> <!-- Tests -->
   </suite> <!-- HRPortalSuite -->
 </testng-results>
